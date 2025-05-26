@@ -1,0 +1,113 @@
+table.kwic {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.kwic td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 1px;
+  white-space:nowrap
+}
+
+.kwic td:nth-child(odd) {
+  text-align: right ;
+}
+
+.kwic th:nth-child(odd) {
+  padding:10px ;
+  text-align: right ;
+}
+
+.kwic th:nth-child(even) {
+  padding:10px ;
+  text-align: left ;
+}
+
+
+.kwic tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.col { width: 25% ; }
+
+table.kws {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.kws tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+a.anchor{
+  color: #004d ;
+  display: inline-block;
+}
+
+a.anchor:target {
+	color: white;
+	background: #004d ;
+}
+
+
+
+input, textarea, button {
+	font-family: inherit ;
+	font-size: inherit ;
+}
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  text-align: right;
+  min-width: 100% ;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+  padding: 0px 0px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd; }
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+.button {
+  border: none;
+  color: black ;
+  padding: 1px 1px;
+  generic-family: serif ;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
