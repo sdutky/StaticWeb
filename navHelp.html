@@ -9,7 +9,7 @@
 <center><h1><strong>Navigating A Contextual Index</strong></h1></center><br>
 
 A contextual index gives a reader the means to explore a text and to quickly locate keywords or phrases and view the passages in which they occur.  It has a long history.   It has been called keyword in context (KWIC) and permuted indices ( see url &#x1F449; en.wikipedia.org <a href="https://en.wikipedia.org/wiki/Key_Word_in_Context">&#x1F517;</a> ).  Typically they have been used to index titles, sections, and abstracts.  We form a contextual index from the entire text of a document.<br><br>Keywords are the fundamental unit of this index.  They begin with a letter, contain only a small number of digits and are not found in a list of stopwords.  Keywords found in a list of non-stop words are exempt from these restrictions.  There are also labels such as {author}, {subhead}, {section}, and {bullet} to organize and index key parts of the text.<br><br>
-A contextual index is structured as the <a class="anchor" id="fc" href="#fullContext"><strong>Full Context</strong></a>, the <a class="anchor" id="sc" href="#scrollingContext"><strong>Scrolling Context</strong></a>, the <a class="anchor" id="ki" href="#keywordIndex"><strong>Keyword Index </strong></a>, and the <a class="anchor" id="ti" href="#thumbIndex"><strong>Thumb Index</strong></a>
+A contextual index is structured as the <a class="anchor" id="fc" href="#fullContext"><strong>Full Context</strong></a>, the <a class="anchor" id="sc" href="#scrollingContext"><strong>Scrolling Context</strong></a>, the <a class="anchor" id="ki" href="#keywordIndex"><strong>Keyword Index</strong></a>, and the <a class="anchor" id="ti" href="#thumbIndex"><strong>Thumb Index</strong></a>
 <br>
 Please try this live example from the following passage:<br><br>
 <div style="margin-left: 80px ; font-size: 24px;">
@@ -24,6 +24,7 @@ Please try this live example from the following passage:<br><br>
 Each keyword in the Full Context connects to the Scrolling Context, as shown below. Note how the hyperlinks to Wikipedia and Project Gutenberg are rendered.   Clicking on the &#x1F517; chain symbol to the right of the web host brings them up.  In a compatible e-book reader such as Thorium, they will open in a new browser window.<br><br>
 The <a class="anchor" href="#sc" id="scrollingContext">Scrolling Context</a> is the heart of the Contextual Index.  Here is the first page:<br><br>
 
+<div class="scroll-container">
 <table>
   <tr>
 	<th><a class="anchor" id="1pageUp" href="#1pageUp">Page Up</a></th>
@@ -88,10 +89,12 @@ The <a class="anchor" href="#sc" id="scrollingContext">Scrolling Context</a> is 
 	<th><a class="anchor" id="1pageBottom" href="#1pageTop">Page Top</a></th>
   </tr>
 </table>
+</div>
 <br>
 
 and the last page:
 <br><br>
+<div class="scroll-container">
 <table>
   <tr>
 	<th><a class="anchor" id="2pageUp" href="#1pageUp">Page Up</a></th>
@@ -131,8 +134,9 @@ and the last page:
 These are constructed by sliding a fixed window across each passage.   Each position of the window corresponds to a line in the Scrolling Context.   The keyword in the middle of the window becomes the boldface primary keyword of that line.  Clicking on it goes to its corresponding position in the passage.  The triangle &#x25b2; on its left links to its location in the Keyword Index.  The keywords to its left and right link to the lines in the Scrolling Context where each appears as the primary keyword.<br><br>
 
 The <a class="anchor" href="#ki" id="keywordIndex">Keyword Index</a> presents a compact grid of collated keywords each joined with those from its right context:
-<br>
+<br><br>
 
+<div class="scroll-container">
 <table>
   <tr>
 	<th><a class="anchor" id="XpageUp" href="#XpageUp">Page Up</a></th>
@@ -157,12 +161,14 @@ The <a class="anchor" href="#ki" id="keywordIndex">Keyword Index</a> presents a 
 	<th><a class="anchor" id="XpageBottom" href="#XpageTop">Page Top</a></th>
   </tr>
 </table>
+</div>
 <br>
 This allows the reader to quickly review and select from sets of related keywords then drill down to their locations in the Scrolling Context.   Clicking the triangle &#x25b2; allows the reader to toggle between a keyword's positions in the Scrolling Context and the Keyword Index.<br><br>
 
-Similar to the tabs on a hard copy dictionary, the <a id="thumbIndex" class="anchor" href="#ti">Thumb Index </a>divides the Keyword Index into convenient chunks on a single page:
+Similar to the tabs on a hard copy dictionary, the <a id="thumbIndex" class="anchor" href="#ti">Thumb Index</a> divides the Keyword Index into convenient chunks on a single page:
 <br><br>
 
+<div class="scroll-container">
 <table class="kws">
   <tr>
 	<th><a class="anchor" id="helpThumb">thumb index</a></th>
@@ -170,8 +176,9 @@ Similar to the tabs on a hard copy dictionary, the <a id="thumbIndex" class="anc
         <th></th>
   </tr>
 <tr><td><a class="anchor" id="t18help" href="#i18help">atom foresight intention</a></td><td><a class="anchor" id="t1help" href="#i1help">band called Eldorado Exploring</a></td><td><a class="anchor" id="t33help" href="#i33help">breaking safe. paid expenses</a></td></tr><tr><td><a class="anchor" id="t2help" href="#i2help">called Eldorado Exploring Expe</a></td><td><a class="anchor" id="t16help" href="#i16help">cruel courage; atom fo</a></td><td><a class="anchor" id="t0help" href="#i0help">devoted band called Eldorado E</a></td></tr><tr><td><a class="anchor" id="t38help" href="#i38help">enterprise don’t uncle mana</a></td><td><a class="anchor" id="t4help" href="#i4help">Exploring Expedition, swor</a></td><td><a class="anchor" id="t13help" href="#i13help">hardihood, greedy audacity, cr</a></td></tr><tr><td><a class="anchor" id="t43help" href="#i43help">Joseph Conrad, Heart Darkness </a></td><td><a class="anchor" id="t41help" href="#i41help">manager leader Joseph Conra</a></td><td><a class="anchor" id="t35help" href="#i35help">paid expenses noble enterprise</a></td></tr><tr><td><a class="anchor" id="t34help" href="#i34help">safe. paid expenses noble ente</a></td><td><a class="anchor" id="t6help" href="#i6help">sworn secrecy. talk, tal</a></td><td><a class="anchor" id="t25help" href="#i25help">tear treasure bowels land</a></td></tr><tr><td><a class="anchor" id="t47help" href="#i47help">url www.gutenberg.org</a></td></tr></table>
+</div>
 
-
+<br>
 The number of keywords in the Thumb Index varies with the total number of keywords. The first keyword on each page of the Keyword Index always appears in the collated grid of the Thumb Index.  Every page in the Contextual Index has a link in its header to the top of Thumb Index.  The headers in the pages of the Keyword Index go directly to the position of their first keyword.
 <br>
 
